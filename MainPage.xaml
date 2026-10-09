@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraFC.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Frecuencia Cardiaca"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+                Text="Ingresa los latidos detectados durante 15 segundos."
+                FontSize="16"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry
+                x:Name="txtLatidos"
+                Placeholder="Número de latidos"
+                Keyboard="Numeric"
+                FontSize="18"
+                HorizontalTextAlignment="Center"/>
+
+            <Button
+                Text="Calcular frecuencia"
+                Clicked="Button_Clicked"
+                BackgroundColor="#1976D2"
+                TextColor="White"
+                FontSize="18"/>
+
+            <Label
+                Text="Resultados"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="lblFrecuencia"
+                Text="Frecuencia cardiaca: -- BPM"
+                FontSize="18"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+                x:Name="lblResultado"
+                Text="Resultado"
+                FontSize="18"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
